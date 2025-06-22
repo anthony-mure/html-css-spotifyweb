@@ -4,13 +4,22 @@
   box-sizing: border-box;
 }
 
+main {
+  height: calc(100vh - 300px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+/*menù laterale*/
+
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 450px;
+  width: 500px;
   background-color: black;
-  height: 100%;
-  border: 1px solid white;
+  height: calc(100vh - 300px);
   color: white;
   font-size: 50px;
 }
@@ -18,7 +27,6 @@
 .box-sidebar-1 {
   width: 100%;
   height: 30%;
-  border: 1px solid white;
   font-size: 50px;
   padding-left: 40px;
 }
@@ -26,51 +34,24 @@
 .box-sidebar-2 {
   width: 100%;
   height: 50%;
-  border: 1px solid white;
   padding-left: 40px;
   padding-top: 20px;
+}
+
+.pd-bot-25 {
+  padding-bottom: 25px;
 }
 
 .box-sidebar-3 {
   width: 100%;
   height: 20%;
-  border: 1px solid white;
   align-content: flex-end;
-}
-
-main {
-  height: calc(100vh -200px);
-  display: flex;
-  flex-wrap: wrap;
-  overflow-y: auto;
-}
-
-.content {
-  width: calc(100% - 450px);
-  height: 100%;
-  background-color: rgb(28, 27, 27);
-  border: 1px solid white;
-}
-
-header {
-  padding: 40px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.btn-header {
-  font-size: 50px;
-  border: 1px solid white;
-  border-radius: 50px;
-  padding: 20px 40px;
-  color: white;
-  text-align: center;
-
+  padding-left: 40px;
+  padding-bottom: 30px;
 }
 
 .logo-spoty {
-  padding: 80px;
-  margin-right: 40px;
+  padding: 60px 40px;
 }
 
 .logo {
@@ -84,58 +65,147 @@ header {
   border-radius: 50%;
   background-color: grey;
   color: white;
+  margin-top: 30px;
 }
-
 
 .fa-square-plus {
   font-size: 100px;
+}
 
+.pd-30 {
+  padding-left: 30px;
+}
+
+/*header*/
+
+.content {
+  width: calc(100% - 500px);
+  height: 100%;
+  background-color: rgb(44, 42, 42);
+  overflow-y: scroll;
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(35, 34, 34);
+}
+
+.btn-header {
+  font-size: 50px;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 30px 30px;
+  color: white;
+  margin-left: 85%;
+  margin-top: 40px;
 }
 
 .container-sm {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.row-sm {
+  width: 100%;
+  font-size: 60px;
+  color: rgb(177, 173, 173);
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
-.col-sm {
-  width: 13%;
-  height: 200px;
-  font-size: 65px;
-  padding-top: 40px;
-
+.pd-left-50 {
+  padding-left: 50px;
 }
 
+/*fine header*/
+
+
+/*contenuto*/
+.h2-container {
+  font-size: 100px;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
 
 .container {
   width: 100%;
-  background-color: red;
-  border: 1px solid white;
-
+  background-color: rgb(44, 42, 42);
 }
 
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+}
 
+.space {
+  justify-content: space-around;
+  margin: 40px;
 }
 
 .col {
   width: 15%;
-  height: 600px;
-  background-color: greenyellow;
-  border: 1px solid white;
+  height: 900px;
 }
 
+.img-music {
+  width: 100%;
+  height: 65%;
+}
+
+.text {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.p-cont {
+  font-size: 60px;
+  color: grey;
+}
+
+.pd-left-80 {
+  padding-left: 80px;
+  padding-bottom: 40px;
+}
+
+.margin-2 {
+  margin: 40px 60px;
+}
+
+.margin-right-60 {
+  margin-right: 60px;
+}
+
+.bord-radius {
+  border-radius: 50%;
+}
+
+/*footer*/
+
 .style {
-  height: 200px;
-  background-color: blue;
+  width: 100vw;
+  background-color: rgb(78, 73, 73);
+}
+
+.footer-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+}
+
+.col-foot {
+  height: 300px;
+  width: 25vw;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.col-foot-center {
+  height: 300px;
+  width: 50vw;
+  background-color: yellow;
+  border: 1px solid black;
 }
