@@ -199,13 +199,64 @@ main {
 .col-foot {
   height: 300px;
   width: 25vw;
-  background-color: aqua;
-  border: 1px solid black;
+  font-size: 50px;
+  padding: 30px;
+  color: white;
+
 }
 
 .col-foot-center {
   height: 300px;
   width: 50vw;
-  background-color: yellow;
-  border: 1px solid black;
+  color: white;
+}
+
+.img-footer {
+  width: 250px;
+  height: 250px;
+  padding: 25px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.mg-left-60 {
+  margin-left: 60px;
+}
+
+.font {
+  font-size: 100px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.font-foot-center {
+  font-size: 50px;
+}
+
+.hr-footbar {
+  width: 70%;
+  border: 10px solid white;
+  margin: 20px auto;
+
+}
+
+.hr-foot-sm {
+  width: 50%;
+  border: 10px solid white;
+}
+
+
+.foot-icon {
+  justify-content: flex-end;
+  padding-top: 100px;
+  padding-right: 40px;
+}
+
+.mg-40 {
+  margin-left: 40px;
 }
