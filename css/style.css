@@ -30,6 +30,7 @@ main {
   height: 30%;
   font-size: 50px;
   padding-left: 40px;
+  color: grey;
 }
 
 .box-sidebar-2 {
@@ -37,10 +38,15 @@ main {
   height: 50%;
   padding-left: 40px;
   padding-top: 20px;
+  color: grey;
 }
 
 .pd-bot-25 {
   padding-bottom: 25px;
+}
+
+.white {
+  color: white;
 }
 
 .box-sidebar-3 {
@@ -49,6 +55,7 @@ main {
   align-content: flex-end;
   padding-left: 40px;
   padding-bottom: 30px;
+  color: gray;
 }
 
 .logo-spoty {
@@ -242,7 +249,7 @@ main {
 .hr-footbar {
   width: 70%;
   border: 10px solid white;
-  margin: 20px auto;
+  margin: 10px auto;
 
 }
 
@@ -267,17 +274,20 @@ main {
 .box-sidebar-1 :hover {
   transition: 0.3s;
   font-weight: bold;
+  color: white;
 }
 
 .box-sidebar-2 :hover {
   transition: 0.3s;
   font-weight: bold;
+  color: white;
 }
 
 
 .box-sidebar-3 :hover {
   transition: 0.3s;
   font-weight: bold;
+  color: white;
 }
 
 .btn-header:hover {
@@ -295,5 +305,30 @@ main {
 .img-music:hover {
   transition: 0.3s;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.col-foot :hover {
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.col-foot-center :hover {
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+
+/*media query tablet*/
+
+@media all and (max-width: 992px) {
+  .container-sm {
+    flex-wrap: wrap;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
 
 }
